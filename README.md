@@ -11,7 +11,7 @@ Practice designing and coding responsive email templates using HTML and CSS. Dem
 
 ## Demo
 
-View project demo at [https://mflanagan924.github.io/email-template-2/](https://mflanagan924.github.io/email-template-2/).
+View project demo at [https://mflanagan924.github.io/email-template-3/](https://mflanagan924.github.io/email-template-3/).
 
 ## Preview
 
