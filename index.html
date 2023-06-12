@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Template</title>
+<style type="text/css">
+	body {
+		margin: 0;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.emailContainer {
+		width: 80%;
+		background-color: rgb(251,249,243);
+        max-width: 800px;
+		min-width: 300px;
+	}
+
+	.hero {
+		width: 30%;
+		margin-left: 35%;
+		margin-top: 20px;
+	}
+
+    .hero-img {
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 20px;
+    }
+
+    .hero-description {
+        width: 80%;
+        margin-left: 10%;
+        color: rgb(34,66,40);
+        text-align: center;
+    }
+
+    .hero-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        font-size: clamp(20px, calc(20px + 1.5vw), 40px);
+    }
+
+    .hero-intro {
+        font-size: clamp(12px, calc(2px + 1vw), 24px);
+    }
+
+    a {
+		color: rgb(85,171,124);
+	}
+
+    .button {
+        background-color: rgb(34,66,40);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 20vw;
+        min-width: 180px;
+        max-width: 300px;
+        padding: 10px 0;
+        font-size: clamp(12px, calc(2px + 1vw), 24px);
+
+    }
+
+    .article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(34,66,40);
+    }
+
+    .image-container {
+        height: 50%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .artile-sub {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .article-img-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: clamp(15px, calc(10px + 1.5vw), 30px);
+    }
+
+    .article-img-description {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: clamp(12px, calc(2px + 1vw), 24px);
+        margin-bottom: 10px;
+    }
+
+    .shop-now {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: clamp(8px, calc(10px + 1.5vw), 25px);
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    .tip {
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 80%;
+        height: 200px;
+        background-color: rgb(34,66,40);
+        color: white;
+    }
+
+    .tip-img {
+        width: 40%;
+        min-width: 150px;
+    }
+
+    .tip-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: clamp(8px, calc(2px + 1.5vw), 18px);
+    }
+
+    .links {
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(8px, calc(2px + 1.5vw), 25px);
+        color: rgb(34,66,40);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .links-links{
+        color: rgb(34,66,40);
+        text-decoration: none;
+    }
+    
+
+	.social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.fa-brands {
+		margin: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.footer {
+		background-color: rgb(34,66,40);
+		font-size: 12px;
+        color: white;
+	}
+
+    .footer-title-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: clamp(30px, calc(2px + 1.5vw), 40px);
+        text-align: center;
+    }
+
+    .footer-img {
+        width: 15%;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+	.copyright {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+        text-align: center;
+	}
+
+	.emailreason {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+        text-align: center;
+	}
+
+	.mailingaddress {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+    hr {
+        border: solid 1px rgb(114,186,147);
+    }
+
+</style>
+</head>
+<body>
+	<div class="emailContainer">
+		<div>
+			<a href="" target="_blank" rel="noopener noreferrer">
+				<img class="hero" src="img/logo.png" alt="logo">
+			</a>
+		</div>
+        <div>
+            <img class="hero-img" src="img/photo 1.png" alt="cactus">
+        </div>
+        <div class="hero-description">
+            <div class="hero-title">
+                Bring a Piece of the Desert Inside
+            </div>
+            <p class="hero-intro">Welcome to the enchanting world of desert <a href="" target="_blank" rel="noopener noreferrer">flora</a>! Discover the captivating beauty of <a href="" target="_blank" rel="noopener noreferrer">cacti</a> and how they can transform your indoor spaces into miniature desert landscapes, adding a touch of nature's resilience and charm to your home or office. Explore our diverse collection of potted cacti and embark on a journey to create a serene oasis of greenery.</p>
+        </div>
+        <div class="button">
+            Discover New Arrivals
+        </div>
+        <div class="article">
+            <div class="hero-title">
+                Meet the Cacti
+            </div>
+            <div class="artile-sub">
+            <div>
+                <div class="image-container">
+                    <img class="article-img" src="img/abstract-gc490235cb_1280.jpg" alt="cactus one">
+                </div>
+                <div class="article-img-title">Bunny Ears Cactus</div>
+                <p class="article-img-description">This charming and unique cactus species is characterized by its soft, pad-like stems covered in fuzzy, bunny ears, making it a delightful addition to any cactus collection.</p>
+                <a class="shop-now" href="" target="_blank" rel="noopener noreferrer">Shop Now</a>
+            </div>
+            <div>
+                <div class="image-container">
+                <img class="article-img" src="img/cactus-g947858389_1280.jpg" alt="cactus two">
+                </div>
+                <div class="article-img-title">Barrel Cactus</div>
+                <p class="article-img-description">This striking desert plant is known for its cylindrical shape and ribbed texture, featuring sharp spines and vibrant blooms that add a touch of southwestern beauty to arid landscapes.</p>
+                <a class="shop-now" href="" target="_blank" rel="noopener noreferrer">Shop Now</a>
+            </div>
+            </div>
+        </div>
+        <div class="tip">
+            <img class="tip-img" src="img/pexels-sasha-kim-9412376.jpg">
+            <div class="tip-title">
+                <h4>Plant Mom's Tip</h4>
+                <p>"When buying cacti, prioritize healthy plants by looking for firm and plump stems, vibrant and evenly colored skin, and a lack of scars or blemishes, as these are indicators of a well-maintained cactus that is more likely to thrive in your care."</p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="hero-title">
+                Meet the Succulents
+            </div>
+            <div class="artile-sub">
+            <div>
+                <div class="image-container">
+                    <img class="article-img" src="img/cactus-g836e4400c_1280.jpg" alt="succulent one">
+                </div>
+                <div class="article-img-title">Echeveria</div>
+                <p class="article-img-description">This plant is known for its rosette-shaped foliage and vibrant, fleshy leaves that come in a variety of colors and textures, making them popular choices for indoor and outdoor gardens alike.</p>
+                <a class="shop-now" href="" target="_blank" rel="noopener noreferrer">Shop Now</a>
+            </div>
+            <div>
+                <div class="image-container">
+                <img class="article-img" src="img/burros-tail-g158503247_1280.jpg" alt="succulent two">
+                </div>
+                <div class="article-img-title">Burro's-tail</div>
+                <p class="article-img-description">This striking plant is characterized by its long, trailing stems adorned with plump, bead-like leaves, creating a visually striking and cascading display in hanging baskets or container gardens.</p>
+                <a class="shop-now" href="" target="_blank" rel="noopener noreferrer">Shop Now</a>
+            </div>
+            </div>
+        </div>
+		<div class="tip">
+            <div class="tip-title">
+                <h4>Plant Mom's Tip</h4>
+                <p>"When potting, choose the right soil. Use a well-draining soil mix specifically designed for cacti and succulents. Avoid soils that retain too much moisture, as this can lead to root rot."</p>
+            </div>
+            <img class="tip-img" src="img/pexels-teona-swift-6912849.jpg">
+        </div>
+        <div class="links">
+            <hr>
+            <div><a class="links-links" href="" target="_blank" rel="noopener noreferrer">New Arrivals</a></div>
+            <hr>
+            <div><a class="links-links" href="" target="_blank" rel="noopener noreferrer">Best Sellers</a></div>
+            <hr>
+            <div><a class="links-links" href="" target="_blank" rel="noopener noreferrer">30 Day Guarantee</a></div>
+            <hr>
+            <div><a class="links-links" href="" target="_blank" rel="noopener noreferrer">Free shipping on +$75</a></div>
+            <hr>
+            <div><a class="links-links" href="" target="_blank" rel="noopener noreferrer">Shop All</a></div>
+            <hr>
+        </div>
+		<div class="footer">
+            <div class="footer-title-img">
+                <div class="footer-title">
+                    Welcome to the cacti family!
+                </div>
+                <img class="footer-img" src="img/approved-gf90950554_1280.png">
+            </div>
+			<div class="social">
+				<a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+				<a href="" target="_blank" rel="noopener noreferrer">
+					<i class="fa-brands fa-pinterest fa-2xl" style="color: #ffffff;"></i>
+				</a>
+				<a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+                </a>
+				<a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </a>
+			</div>
+			<div class="copyright">
+				<i>Copyright © 2023 Prickly Paradise, All rights reserved.</i>
+			</div>
+			<div class="emailreason">
+				You are receiving this email because you opted in via our website.
+			</div>
+			<div class="mailingaddress">
+				Our mailing address is:<br>Prickly Paradise<br>55 Rue du Faubourg<br>Paris 75008
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/2a249cc1b2.js" crossorigin="anonymous"></script>
+</body>
+</html>
